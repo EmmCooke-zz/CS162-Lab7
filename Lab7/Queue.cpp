@@ -135,4 +135,8 @@ void Queue::printQueue()
 		}
 		cout << endl;
 	}
+	else
+	{
+		cout << "There is nothing to print!" << endl;
+	}
 }

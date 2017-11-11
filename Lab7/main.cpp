@@ -47,7 +47,14 @@ int main()
 			linkedList.addBack(val);
 			break;
 		case 2: // print the value in the head node
-			cout << "Front Node Value: " << linkedList.getFront() << endl;
+			if (!linkedList.isEmpty())
+			{
+				cout << "Front Node Value: " << linkedList.getFront() << endl;
+			}
+			else
+			{
+				cout << "There is nothing there!" << endl;
+			}
 			break;
 		case 3:	// remove the front node
 			linkedList.removeFront();
@@ -61,6 +68,7 @@ int main()
 		default: // An incorrect choice has been entered
 			cout << "Please enter a choice between 1 and 5." << endl;
 		}
+		cout << endl;
 	} while (!exitChoice);
 
 	return 0;
