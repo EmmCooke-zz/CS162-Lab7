@@ -13,10 +13,10 @@ private:
 	struct QueueNode
 	{
 		int val;
-		QueueNode * next = nullptr;
-		QueueNode * prev = nullptr;
+		QueueNode * prev;
+		QueueNode * next;
 
-		QueueNode(int valueIn, QueueNode *prevIn = nullptr, QueueNode *nextIn = nullptr)
+		QueueNode(int valueIn, QueueNode * prevIn = nullptr, QueueNode * nextIn = nullptr)
 		{
 			val = valueIn;
 			prev = prevIn;
